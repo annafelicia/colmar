@@ -1,11 +1,13 @@
 /* style.css for Colmar Academy */
 
-.flex {
+.flexbox {
   display: flex;
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #424242;
 }
 
 
@@ -13,21 +15,20 @@ body {
 /* HEADER */
 header {
   height: 64px;
-  background-color: white
-  color: black;
-
+  background-color: white;
+  margin-left: 24px;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-  margin-left: 24px;
   align-items: center;
   text-transform: uppercase;
 }
 
 .logo span {
-  font-weight: bold;
+  font-weight: 100;
+  color: gray;
 }
 
 nav {
@@ -35,5 +36,50 @@ nav {
 }
 
 header li {
+  font-size: 0.8rem;
+  list-style: none;
   margin-left: 16px;
+}
+
+
+/* BANNER */
+#banner {
+  background-color: lightgray;
+  padding: 32px 24px;
+}
+
+#banner .image {
+  width: 60%;
+  margin-right: 24px;
+}
+
+#banner img {
+  width: 100%;
+}
+
+#banner .textbox {
+  margin-left: 16px;
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  color: #424242;
+  font-weight: 700;
+}
+
+#banner h1 {
+  font-size: 2rem;
+}
+
+#banner h2 {
+  line-height: 1.5rem;
+  margin: 2rem 0;
+}
+
+#start {
+  width: 80%;
+  background-color: #424242;
+  color: white;
+  padding: 8px 0;
+  text-align: center;
+  font-weight: normal;
 }
