@@ -13,11 +13,18 @@ h1 {
 
 h2 {
   font-size: 1.6rem;
-  font-weight: bold;
 }
 
 h3 {
   font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h2, h3, h4 {
+  font-weight: bold;
 }
 
 .container {
@@ -35,6 +42,10 @@ h3 {
 
 .main img {
   width: 100%;
+}
+
+.gray {
+  background-color: #f4f4f4;
 }
 
 
@@ -70,10 +81,6 @@ header li {
 
 
 /* BANNER */
-#banner {
-  background-color: lightgray;
-}
-
 #banner img {
   width: 100%;
 }
@@ -100,6 +107,9 @@ header li {
 
 
 /* INFO */
+#info {
+  padding-right: 0;
+}
 #info h2 {
   margin: 32px 0 24px 0;
 }
@@ -117,9 +127,6 @@ header li {
   width: 40%;
 }
 
-#orientation {
-  padding-top: 0;
-}
 .box {
   padding: 16px 16px;
 }
@@ -149,6 +156,48 @@ header li {
   color: #0080ff;
 }
 
-#guest {
-  background-color: lightgray;
+#orientation {
+  padding-top: 0;
+}
+
+
+/* COURSES */
+#courses {
+  padding: 32px 72px;
+}
+
+#courses h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+#courses .flexbox {
+  width: 100%;
+}
+
+.course {
+  margin-right: 32px;
+  background-color: white;
+}
+
+.course:last-child {
+  margin-right: 0;
+}
+
+.course img{
+  width: 100%;
+  height: auto;
+}
+
+.course .text {
+  padding: 16px;
+}
+
+.course p:nth-child(2n) {
+  text-transform: uppercase;
+  margin: 8px 0;
+}
+
+.flexbox:nth-child(3n) {
+  margin-top: 32px;
 }
