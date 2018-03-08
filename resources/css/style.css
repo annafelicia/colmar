@@ -1,0 +1,39 @@
+/* style.css for Colmar Academy */
+
+.flex {
+  display: flex;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+
+
+/* HEADER */
+header {
+  height: 64px;
+  background-color: white
+  color: black;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 24px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.logo span {
+  font-weight: bold;
+}
+
+nav {
+  margin-right: 24px;
+}
+
+header li {
+  margin-left: 16px;
+}
