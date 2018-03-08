@@ -1,13 +1,40 @@
 /* style.css for Colmar Academy */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  color: #424242;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+.container {
+  padding: 32px 24px;
+}
 
 .flexbox {
   display: flex;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  color: #424242;
+.main {
+  width: 60%;
+  margin-right: 24px;
+}
+
+.main img {
+  width: 100%;
 }
 
 
@@ -45,12 +72,6 @@ header li {
 /* BANNER */
 #banner {
   background-color: lightgray;
-  padding: 32px 24px;
-}
-
-#banner .image {
-  width: 60%;
-  margin-right: 24px;
 }
 
 #banner img {
@@ -59,19 +80,12 @@ header li {
 
 #banner .textbox {
   margin-left: 16px;
-  width: 30%;
+  width: 40%;
   flex-direction: column;
   justify-content: center;
-  color: #424242;
-  font-weight: 700;
 }
 
-#banner h1 {
-  font-size: 2rem;
-}
-
-#banner h2 {
-  line-height: 1.5rem;
+#banner h3 {
   margin: 2rem 0;
 }
 
@@ -82,4 +96,59 @@ header li {
   padding: 8px 0;
   text-align: center;
   font-weight: normal;
+}
+
+
+/* INFO */
+#info h2 {
+  margin: 32px 0 24px 0;
+}
+
+.main p {
+  margin-bottom: 2rem;
+}
+
+.main span {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+
+.flexitem {
+  width: 40%;
+}
+
+#orientation {
+  padding-top: 0;
+}
+.box {
+  padding: 16px 16px;
+}
+
+.box .image {
+  width: 35%;
+  height: auto;
+}
+
+.box img {
+  width: 100%;
+}
+
+.box .text {
+  margin-left: 16px;
+  width: 65%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box p {
+  margin: 8px 0;
+}
+
+.box a {
+  text-decoration: none;
+  color: #0080ff;
+}
+
+#guest {
+  background-color: lightgray;
 }
