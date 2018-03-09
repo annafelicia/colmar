@@ -1,30 +1,35 @@
 /* style.css for Colmar Academy */
+
+/* UNIVERSAL styles */
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: lighter;
+  font-size: 12px;
+  font-weight: 200;
   color: #424242;
 }
 
 h1 {
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 1.6rem;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 1.4rem;
+  font-weight: 500;
 }
 
 h4 {
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
-h2, h3, h4 {
-  font-weight: bold;
+img {
+  width: 100%;
 }
 
 .container {
@@ -40,12 +45,8 @@ h2, h3, h4 {
   margin-right: 24px;
 }
 
-.main img {
-  width: 100%;
-}
-
 .gray {
-  background-color: #f4f4f4;
+  background-color: #dcdcdc;
 }
 
 
@@ -53,7 +54,6 @@ h2, h3, h4 {
 /* HEADER */
 header {
   height: 64px;
-  background-color: white;
   margin-left: 24px;
   align-items: center;
   justify-content: space-between;
@@ -64,9 +64,13 @@ header {
   text-transform: uppercase;
 }
 
+b {
+  font-weight: 600;
+}
+
 .logo span {
-  font-weight: 100;
-  color: gray;
+  font-weight: 400;
+  color: #828282;
 }
 
 nav {
@@ -80,11 +84,8 @@ header li {
 }
 
 
-/* BANNER */
-#banner img {
-  width: 100%;
-}
 
+/* BANNER */
 #banner .textbox {
   margin-left: 16px;
   width: 40%;
@@ -104,6 +105,7 @@ header li {
   text-align: center;
   font-weight: normal;
 }
+
 
 
 /* INFO */
@@ -136,10 +138,6 @@ header li {
   height: auto;
 }
 
-.box img {
-  width: 100%;
-}
-
 .box .text {
   margin-left: 16px;
   width: 65%;
@@ -159,6 +157,7 @@ header li {
 #orientation {
   padding-top: 0;
 }
+
 
 
 /* COURSES */
@@ -185,7 +184,6 @@ header li {
 }
 
 .course img{
-  width: 100%;
   height: auto;
 }
 
@@ -200,4 +198,47 @@ header li {
 
 .flexbox:nth-child(3n) {
   margin-top: 32px;
+}
+
+
+
+/* THESIS EXHIBITION */
+#thesis h2 {
+  text-align: center;
+  margin: 32px 0;
+}
+
+#video.flexbox {
+  flex-direction: column;
+  width: 60%;
+  margin-right: 24px;
+}
+
+video {
+  margin-bottom: 24px;
+}
+
+#video h3 {
+  margin-bottom: 8px;
+}
+
+#video.textbox {
+  margin-bottom: 32px;
+}
+
+
+
+/* FOOTER */
+footer.flexbox {
+  justify-content: space-between;
+  font-size: 0.6rem;
+  border-top: 1px solid #dcdcdc;
+}
+
+footer.container {
+  padding-top: 16px;
+}
+
+footer span {
+  margin-left: 16px;
 }
