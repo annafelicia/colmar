@@ -29,7 +29,9 @@ h4 {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .container {
@@ -42,6 +44,8 @@ img {
 
 .main {
   width: 60%;
+  height: auto;
+  overflow: hidden;
   margin-right: 24px;
 }
 
@@ -54,7 +58,7 @@ img {
 /* HEADER */
 header {
   height: 64px;
-  margin-left: 24px;
+  padding-left: 24px;
   align-items: center;
   justify-content: space-between;
 }
@@ -83,6 +87,10 @@ header li {
   margin-left: 16px;
 }
 
+.collapsed {
+  display: none;
+}
+
 
 
 /* BANNER */
@@ -103,7 +111,6 @@ header li {
   color: white;
   padding: 8px 0;
   text-align: center;
-  font-weight: normal;
 }
 
 
@@ -203,6 +210,10 @@ header li {
 
 
 /* THESIS EXHIBITION */
+#thesis {
+  padding-right: 0;
+}
+
 #thesis h2 {
   text-align: center;
   margin: 32px 0;
@@ -241,4 +252,64 @@ footer.container {
 
 footer span {
   margin-left: 16px;
+}
+
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 720px) {
+
+/* Universal */
+  .container {
+    padding: 0;
+  }
+
+  .main {
+    width: 100%;
+    margin: 0;
+  }
+
+
+/* Header*/
+
+  header {
+    padding: 0;
+  }
+
+  .logo, nav {
+    display: none;
+  }
+
+  .collapsed {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+
+/*Banner*/
+
+  #banner {
+    flex-direction: column;
+  }
+
+  #banner .textbox {
+    width: auto;
+    padding: 32px 16px 32px 0;
+  }
+
+  #banner h3 {
+    margin: 32px 0;
+  }
+
+  #start {
+    width: 100%;
+    background-color: #828282;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 12px 0;
+  }
+
+
 }
