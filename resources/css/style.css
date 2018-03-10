@@ -53,6 +53,10 @@ img {
   background-color: #dcdcdc;
 }
 
+.mobile {
+  display: none;
+}
+
 
 
 /* HEADER */
@@ -257,7 +261,6 @@ footer span {
 
 
 /* MOBILE */
-
 @media only screen and (max-width: 720px) {
 
 /* Universal */
@@ -270,15 +273,18 @@ footer span {
     margin: 0;
   }
 
-
-/* Header*/
-
-  header {
-    padding: 0;
+  .logo,
+  nav,
+  #info
+  .main,
+  .desktop{
+    display: none;
   }
 
-  .logo, nav {
-    display: none;
+
+/* Header */
+  header {
+    padding: 0;
   }
 
   .collapsed {
@@ -288,8 +294,7 @@ footer span {
   }
 
 
-/*Banner*/
-
+/* Banner */
   #banner {
     flex-direction: column;
   }
@@ -309,6 +314,47 @@ footer span {
     font-size: 1.4rem;
     font-weight: 500;
     padding: 12px 0;
+  }
+
+
+/* Info */
+  #info, .box, #info .gray {
+    margin: 0;
+    padding: 0;
+  }
+
+  #info .flexitem {
+    width: 100%;
+    padding: 16px 16px 0 16px;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  #info .image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 32px;
+  }
+
+  img.mobile {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  #orientation .image {
+    margin-top: 0;
+  }
+
+  #info .text {
+    margin: 32px 0 32px 16px;
+  }
+
+  #guest {
+    background-color: white;
   }
 
 
