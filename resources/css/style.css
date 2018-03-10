@@ -34,6 +34,11 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   padding: 32px 24px;
 }
@@ -161,7 +166,6 @@ header li {
 }
 
 .box a {
-  text-decoration: none;
   color: #0080ff;
 }
 
