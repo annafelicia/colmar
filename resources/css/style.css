@@ -176,13 +176,13 @@ header li {
   padding: 32px 72px;
 }
 
+#courses .flexbox {
+  width: 100%;
+}
+
 #courses h2 {
   text-align: center;
   margin-bottom: 32px;
-}
-
-#courses .flexbox {
-  width: 100%;
 }
 
 .course {
@@ -357,5 +357,33 @@ footer span {
     background-color: white;
   }
 
+
+  /* Courses */
+  #courses .image,
+  #courses p {
+    display: none;
+  }
+
+  #courses {
+    background-color: white;
+    padding: 32px 16px 24px 16px;
+    border: 0.5px solid #dcdcdc;
+  }
+
+  #courses .flexbox {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  #courses h2 {
+    margin-bottom: 16px;
+  }
+
+  .course {
+    margin-right: 0;
+    margin-bottom: 8px;
+    padding: 16px 0 24px 0px;
+    background-color: #dcdcdc;
+  }
 
 }
